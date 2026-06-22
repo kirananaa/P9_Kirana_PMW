@@ -7,7 +7,8 @@
     android:layout_marginVertical="8dp"
     app:cardCornerRadius="20dp"
     app:cardElevation="3dp"
-    app:strokeColor="#D9E6F2"
+    app:cardBackgroundColor="@color/surface_dark"
+    app:strokeColor="@color/primary_red"
     app:strokeWidth="1dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nama Mahasiswa"
-            android:textColor="#0F172A"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
         <TextView
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="NIM"
-            android:textColor="#2563EB"
+            android:textColor="@color/primary_red"
             android:textSize="14sp" />
         <TextView
             android:id="@+id/tvDetailMahasiswa"
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="Prodi - Semester"
-            android:textColor="#64748B"
+            android:textColor="#AAAAAA"
             android:textSize="14sp" />
         <TextView
             android:id="@+id/tvEmailMahasiswa"
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="email@student.ac.id"
-            android:textColor="#64748B"
+            android:textColor="#AAAAAA"
             android:textSize="14sp" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnHapusMahasiswa"
@@ -52,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Hapus"
+            app:backgroundTint="@color/primary_red"
             app:cornerRadius="14dp" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

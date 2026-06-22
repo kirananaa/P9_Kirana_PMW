@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FBFF">
+    android:background="@color/background_dark">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,62 +13,82 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tambah Data Mahasiswa"
-            android:textColor="#0F172A"
+            android:textColor="@color/primary_red"
             android:textSize="24sp"
             android:textStyle="bold" />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:hint="NIM">
+            android:hint="NIM"
+            android:textColorHint="#AAAAAA"
+            app:hintTextColor="@color/primary_red"
+            app:boxStrokeColor="@color/primary_red">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtNim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:hint="Nama Mahasiswa">
+            android:hint="Nama Mahasiswa"
+            android:textColorHint="#AAAAAA"
+            app:hintTextColor="@color/primary_red"
+            app:boxStrokeColor="@color/primary_red">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:hint="Program Studi">
+            android:hint="Program Studi"
+            android:textColorHint="#AAAAAA"
+            app:hintTextColor="@color/primary_red"
+            app:boxStrokeColor="@color/primary_red">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtProdi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:hint="Semester">
+            android:hint="Semester"
+            android:textColorHint="#AAAAAA"
+            app:hintTextColor="@color/primary_red"
+            app:boxStrokeColor="@color/primary_red">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtSemester"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:hint="Email">
+            android:hint="Email"
+            android:textColorHint="#AAAAAA"
+            app:hintTextColor="@color/primary_red"
+            app:boxStrokeColor="@color/primary_red">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.button.MaterialButton
@@ -77,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Simpan Data"
+            app:backgroundTint="@color/primary_red"
             app:cornerRadius="16dp" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnKembaliTambahMahasiswa"
@@ -84,6 +105,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Kembali"
+            app:backgroundTint="@color/black"
+            app:strokeColor="@color/primary_red"
+            app:strokeWidth="1dp"
+            android:textColor="@color/white"
             app:cornerRadius="16dp" />
     </LinearLayout>
 </ScrollView>

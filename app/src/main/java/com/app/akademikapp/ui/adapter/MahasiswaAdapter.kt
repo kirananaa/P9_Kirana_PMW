@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.akademikapp.data.model.Mahasiswa
-import com.app.akademikapp.databinding.ItemMahasiswaBinding
+import com.app.AcademikMobile.databinding.ItemMahasiswaBinding
 
 class MahasiswaAdapter(
     private val items: MutableList<Mahasiswa>,

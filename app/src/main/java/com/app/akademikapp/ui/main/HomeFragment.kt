@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.app.AcademikMobile.MainActivity
 import com.app.AcademikMobile.R
 import com.app.AcademikMobile.databinding.FragmentHomeBinding
+import com.app.akademikapp.ui.main.AdminFragment
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -24,7 +26,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
 
         binding.btnMasukAdmin.setOnClickListener {
-            Toast.makeText(requireContext(), "Portal Admin segera hadir!", Toast.LENGTH_SHORT).show()
+            (activity as? MainActivity)?.replaceFragment(AdminFragment())
         }
     }
 
